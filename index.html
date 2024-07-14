@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="shortcut icon" type="x-icon" href="images/download.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Task Manager</h1>
+        <form id="new-task-form">
+            <input type="text" id="new-task-input" placeholder="What do you have planned..?" />
+            <input type="submit" id="new-task-submit" value="Add Task">
+        </form>
+    </header>
+
+    <main>
+        <section class="task-list">
+            <h2>Your Tasks</h2>
+            <div id="task-filter" class="task-filter">
+                <label for="filter">Filter Tasks:</label>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="current">Current Tasks</option>
+                    <option value="completed">Completed Tasks</option>
+                    <option value="deleted">Deleted Tasks</option>
+                </select>
+            </div>
+            <div id="tasks"></div>
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
